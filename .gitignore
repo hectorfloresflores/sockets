@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Build output
+frontend/dist/
+
+# SQLite database (embedded DB, regenerated at runtime)
+backend/data/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Env
+.env
+.env.local
+
+# OS
+.DS_Store

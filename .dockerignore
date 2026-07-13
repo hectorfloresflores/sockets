@@ -1,0 +1,21 @@
+# Never copy local dependencies or build artifacts into the image; the build
+# stages install/build everything from scratch for reproducibility.
+**/node_modules
+frontend/dist
+backend/data
+
+# Local + VCS noise
+.git
+.gitignore
+.idea
+*.iml
+*.log
+npm-debug.log*
+.DS_Store
+
+# Local env files (inject config via -e / --env instead)
+.env
+.env.local
+
+# Docs are not needed inside the image
+README.md
